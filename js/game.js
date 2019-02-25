@@ -3,6 +3,7 @@ var Colors = {
     red:0xf25346,
     white:0xd8d0d1,
     pink:0xF5986E,
+    blonde: 0xF2E1AE,
     brown:0x59332e,
     brownDark:0x23190f,
     blue:0x5DAFAC,
@@ -108,7 +109,7 @@ var Pilot = function(){
   this.mesh.add(face);
 
   var hairGeom = new THREE.BoxGeometry(4,4,4);
-  var hairMat = new THREE.MeshLambertMaterial({color:Colors.brown});
+  var hairMat = new THREE.MeshLambertMaterial({color:Colors.blonde});
   var hair = new THREE.Mesh(hairGeom, hairMat);
   hair.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(0,2,0));
   var hairs = new THREE.Object3D();
